@@ -1,5 +1,5 @@
 <?php
-
+// src/Logger.php foi criado para registrar os logs no arquivo log.txt
 class Logger
 {
     private static $file = __DIR__ . '/../log.txt';
