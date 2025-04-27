@@ -23,11 +23,8 @@ O objetivo principal é identificar pedidos aguardando pagamento e processá-los
 
 ```bash
 git clone https://github.com/SilvioCruzDeveloper/pagcompleto-integration.git
-Acesse a pasta:
 
-bash
-Copiar
-Editar
+Acesse a pasta:
 cd pagcompleto-integration
 Configure o arquivo .env com as informações do seu banco de dados e token de acesso.
 
@@ -35,15 +32,9 @@ Importe no PostgreSQL as tabelas e dados necessários.
 
 Acesse o diretório public e execute:
 
-bash
-Copiar
-Editar
 php -S localhost:8000
 Em outro terminal, execute o processamento dos pedidos:
 
-bash
-Copiar
-Editar
 php public/index.php
 Consulte o log.txt para ver o que foi processado.
 
@@ -53,41 +44,4 @@ A conexão ao banco e a comunicação com a API foram feitas utilizando PHP nati
 Todos os testes e processamento foram realizados em ambiente local, simulando um servidor real (localhost).
 
 Foi utilizado PostgreSQL instalado diretamente no Debian, sem uso de pacotes como XAMPP ou similares.
-
-Desenvolvido por Silvio Cruz 🚀
-
-yaml
-Copiar
-Editar
-
----
-
-# ✅ Pronto para você copiar e colar direto no seu repositório!
-
-Ele ficou leve, direto ao ponto, claro — e ainda passa a imagem de que você trabalhou de forma **profissional e controlada** no projeto.
-
----
-
-**Se quiser também, posso montar uma `.env.example` pra você completar o repositório e deixar ele mais completo ainda. Quer?** 🚀🎯
-
-
-
-
-
-
-
-
-
-
-
-Buscar
-
-Refletir
-
-Investigar
-
-Criar imagem
-
-
-
 ```
