@@ -1,4 +1,18 @@
-[INFO] [2025-04-27 02:54:03] Iniciado processamento de pedidos.
-[INFO] [2025-04-27 02:54:03] Finalizado processamento de pedidos.
-[INFO] [2025-04-27 03:15:52] Iniciado processamento de pedidos.
-[INFO] [2025-04-27 03:15:52] Finalizado processamento de pedidos.
+[INFO] [2025-04-27 03:27:47] Iniciado processamento de pedidos.
+[INFO] [2025-04-27 03:27:47] Processando pedido ID 100001.
+[INFO] [2025-04-27 03:27:48] Pedido ID 100001 atualizado para situação 3.
+[INFO] [2025-04-27 03:27:48] Processando pedido ID 100001.
+[INFO] [2025-04-27 03:27:49] Pedido ID 100001 atualizado para situação 3.
+[INFO] [2025-04-27 03:27:49] Processando pedido ID 100002.
+[INFO] [2025-04-27 03:27:50] Pedido ID 100002 atualizado para situação 3.
+[INFO] [2025-04-27 03:27:50] Processando pedido ID 100003.
+[INFO] [2025-04-27 03:27:51] Pedido ID 100003 atualizado para situação 3.
+[INFO] [2025-04-27 03:27:51] Processando pedido ID 100004.
+[INFO] [2025-04-27 03:27:51] Pedido ID 100004 atualizado para situação 3.
+[INFO] [2025-04-27 03:27:51] Processando pedido ID 100005.
+[INFO] [2025-04-27 03:27:51] Pedido ID 100005 atualizado para situação 3.
+[INFO] [2025-04-27 03:27:51] Finalizado processamento de pedidos.
+
+//Acima tenho testes com dados adicionados ao banco manualmente //
+  [INFO] [2025-04-27 03:31:08] Iniciado processamento de pedidos.
+[INFO] [2025-04-27 03:31:08] Finalizado processamento de pedidos.
