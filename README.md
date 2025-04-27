@@ -17,16 +17,6 @@ O objetivo principal é identificar pedidos aguardando pagamento e processá-los
 
 ---
 
-## Estrutura do Projeto
-
-pagcompleto-integration/ ├── config/ │ └── db.php ├── src/ │ ├── PedidoService.php │ ├── PagamentoGateway.php │ ├── Logger.php ├── public/ │ └── index.php ├── log.txt ├── .env ├── .gitignore ├── README.md
-
-yaml
-Copiar
-Editar
-
----
-
 ## Como Executar o Projeto
 
 1. Clone o repositório:
