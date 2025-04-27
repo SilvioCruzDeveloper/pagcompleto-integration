@@ -2,49 +2,62 @@
 
 ## Sobre o Projeto
 
-Este projeto consiste em integrar pedidos de uma base de dados PostgreSQL com o gateway de pagamento PAGCOMPLETO. Desenvolvido em PHP puro, com estrutura organizada e configurado para rodar em ambiente local via `localhost`.
+Integração de pedidos do banco de dados PostgreSQL com o gateway PAGCOMPLETO, feita em **PHP puro** e ambiente **localhost**.
 
-O objetivo principal é identificar pedidos aguardando pagamento e processá-los automaticamente através da API do gateway, atualizando o status conforme o retorno da API.
-
----
+O objetivo é identificar pedidos aguardando pagamento, enviar para a API e atualizar o status conforme o retorno.
 
 ## Tecnologias Utilizadas
 
 - PHP (sem frameworks)
 - PostgreSQL
-- cURL (extensão do PHP)
-- Ambiente local no Linux Debian
+- Extensões PHP necessárias:
+  - `pdo_pgsql`
+  - `pgsql`
+  - `curl`
+
+## Como Executar
+
+### 1. Requisitos
+
+- PHP instalado
+- PostgreSQL instalado
+- Extensões PHP ativas: `pdo_pgsql`, `pgsql`, `curl`
+
+### 2. Passos
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/SilvioCruzDeveloper/pagcompleto-integration.git
+   cd pagcompleto-integration
+   ```
+
+2. configure o `.env`:
+   
+   (Preencha com informações do banco e token.)
+
+3. Importe no PostgreSQL as tabelas e dados fornecidos.
+
+4. Inicie o servidor PHP:
+   ```bash
+   php -S localhost:8000 -t public
+   ```
+
+5. Em outro terminal, execute o processamento:
+   ```bash
+   php public/index.php
+   ```
+
+6. Consulte o `log.txt` para ver o que foi processado.
+
+## Observações
+
+- Desenvolvido e testado em ambiente local Linux Debian.
+- Para Windows, é possível usar XAMPP:
+  - Coloque o projeto na pasta `htdocs`.
+  - Ative `pdo_pgsql`, `pgsql` e `curl` no `php.ini`.
+  - Acesse via `http://localhost/pagcompleto-integration/public`.
+  - Execute `php public/index.php` via terminal.
 
 ---
 
-## Como Executar o Projeto
-
-1. Clone o repositório:
-
-
-# git clone https://github.com/SilvioCruzDeveloper/pagcompleto-integration.git
-
-Acesse a pasta:
-cd pagcompleto-integration
-Configure o arquivo .env com as informações do seu banco de dados e token de acesso.
-
-Importe no PostgreSQL as tabelas e dados necessários.
-
-Acesse o diretório public e execute:
-
-php -S localhost:8000
-Em outro terminal, execute o processamento dos pedidos:
-
-php public/index.php
-Consulte o log.txt para ver o que foi processado.
-
-Observações
-A conexão ao banco e a comunicação com a API foram feitas utilizando PHP nativo.
-
-Todos os testes e processamento foram realizados em ambiente local, simulando um servidor real (localhost).
-
-Foi utilizado PostgreSQL instalado diretamente no Debian, sem uso de pacotes como XAMPP ou similares.
-
-## Obs 
-
-Para o contexto de máquinas com Windows, basta executar o código utilizando o XAMPP. Vale ressaltar que o PostgreSQL deve ser utilizado nesse processo.
+> Desenvolvido por **Silvio Cruz**
