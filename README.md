@@ -21,8 +21,8 @@ O objetivo principal é identificar pedidos aguardando pagamento e processá-los
 
 1. Clone o repositório:
 
-```bash
-git clone https://github.com/SilvioCruzDeveloper/pagcompleto-integration.git
+
+# git clone https://github.com/SilvioCruzDeveloper/pagcompleto-integration.git
 
 Acesse a pasta:
 cd pagcompleto-integration
@@ -44,4 +44,7 @@ A conexão ao banco e a comunicação com a API foram feitas utilizando PHP nati
 Todos os testes e processamento foram realizados em ambiente local, simulando um servidor real (localhost).
 
 Foi utilizado PostgreSQL instalado diretamente no Debian, sem uso de pacotes como XAMPP ou similares.
-```
+
+## Obs 
+
+Para o contexto de máquinas com Windows, basta executar o código utilizando o XAMPP. Vale ressaltar que o PostgreSQL deve ser utilizado nesse processo.
