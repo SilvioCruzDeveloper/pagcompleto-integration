@@ -1,10 +1,11 @@
 <?php
-
+// src/PagamentoGateway.php faz a chamada para a API PAGCOMPLETO para processar o pagamento de um pedido especifico e atualiza o status dos pedidos no banco de dados
 class PagamentoGateway
 {
     private $accessToken;
     private $urlBase = 'https://apiinterna.ecompleto.com.br/exams/processTransaction';
 
+    // Inicializa a classe com o Access Token
     public function __construct($accessToken)
     {
         $this->accessToken = $accessToken;
